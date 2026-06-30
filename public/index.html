@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- [PERCOBAAN] Judul halaman dan link stylesheet -->
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- [PERCOBAAN] Judul game -->
+  <h2>Snake Game</h2>
+
+  <!-- [PERCOBAAN] Canvas sebagai drawing area ukuran 400x400 -->
+  <canvas id="game" width="400" height="400"></canvas>
+
+  <!-- [UPGRADE LATIHAN] Panel level: muncul saat pemain naik level
+       Berisi info level baru, skor saat ini, dan tombol lanjut -->
+  <div id="levelPanel" class="hidden">
+    <h2 id="levelText"></h2>
+    <p id="scoreText"></p>
+    <button id="nextLevelBtn">Mulai Level Selanjutnya</button>
+  </div>
+
+  <!-- [PERCOBAAN] Link ke file logika game -->
+  <script src="game.js"></script>
+
+</body>
+</html>

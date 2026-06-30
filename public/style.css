@@ -1,0 +1,32 @@
+/* [PERCOBAAN] Styling dasar: rata tengah dan font */
+body {
+  text-align: center;
+  font-family: Arial;
+}
+
+/* [PERCOBAAN] Border canvas sebagai batas area permainan */
+canvas {
+  border: 2px solid black;
+  background: #eee;
+}
+
+/* ==============================
+   [UPGRADE LATIHAN] Styling panel level
+   ============================== */
+
+/* Panel level: tampil di bawah canvas saat naik level */
+#levelPanel {
+  margin-top: 20px;
+}
+
+/* Kelas helper untuk menyembunyikan panel */
+.hidden {
+  display: none;
+}
+
+/* Tombol lanjut level */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
