@@ -24,6 +24,26 @@ This repository contains an early Snake game implementation with a fixed-size Ca
 - Pause, resume, and restart controls.
 - Increasing game speed as the difficulty changes.
 
+## Game flow
+
+```mermaid
+flowchart TD
+    A["Start Express server"] --> B["Serve public game files"]
+    B --> C["Open game in browser"]
+    C --> D["Initialize Canvas and game state"]
+    D --> E["Choose direction and difficulty"]
+    E --> F["Move snake and render frame"]
+    F --> G{"Food collected?"}
+    G -->|Yes| H["Increase score and grow snake"]
+    G -->|No| I["Continue movement"]
+    H --> J{"Collision or game over?"}
+    I --> J
+    J -->|No| F
+    J -->|Yes| K["Show final score"]
+    K --> L["Restart game"]
+    L --> D
+```
+
 ## Technology
 
 - HTML5
